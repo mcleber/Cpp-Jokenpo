@@ -2,5 +2,5 @@
 
 versão: 0.1
 <p>
-Estudo da linguagem C++
+Estudo de funções na linguagem C++
 <p>
