@@ -4,7 +4,7 @@ Jokenpô
 Cleber Moretti
 https://github.com/mcleber
 
-v.0.1
+v.1.0
 03/04/2022
 */
 
