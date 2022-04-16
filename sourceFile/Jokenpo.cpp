@@ -1,5 +1,5 @@
 /* 
-Jokenpô 
+JokenpÃ´ 
 
 Cleber Moretti
 https://github.com/mcleber
@@ -30,7 +30,7 @@ int main()
 	while (verificacao)
 	{
 		system("CLS");
-		std::cout << "--- OPÇÕES ---" << "\n[ 1 ] PEDRA\n" << "[ 2 ] PAPEL\n" << "[ 3 ] TESOURA\n";
+		std::cout << "--- OPÃ‡Ã•ES ---" << "\n[ 1 ] PEDRA\n" << "[ 2 ] PAPEL\n" << "[ 3 ] TESOURA\n";
 		std::cout << "\nEscolha sua jogada: ";
 		std::cin >> jogador;
 
@@ -38,26 +38,26 @@ int main()
 		Sleep(530);
 		std::cout << "KEN";
 		Sleep(530);
-		std::cout << "PÔ\n";
+		std::cout << "PÃ”\n";
 		Sleep(530);
 
 		/* ESCOLHAS */
 
 		if (jogador == 1)
 		{
-			std::cout << "\nVocê escolheu PEDRA." << std::endl;
+			std::cout << "\nVocÃª escolheu PEDRA." << std::endl;
 		}
 		else if (jogador == 2)
 		{
-			std::cout << "\nVocê escolheu PAPEL." << std::endl;
+			std::cout << "\nVocÃª escolheu PAPEL." << std::endl;
 		}
 		else if (jogador == 3)
 		{
-			std::cout << "\nVocê escolheu TESOURA." << std::endl;
+			std::cout << "\nVocÃª escolheu TESOURA." << std::endl;
 		}
 		else
 		{
-			std::cout << "\nOpção inválida." << std::endl;
+			std::cout << "\nOpÃ§Ã£o invÃ¡lida." << std::endl;
 			return 1;
 		}
 
@@ -123,7 +123,7 @@ int main()
 
 		/* CONITNUAR JOGO? */ 
 
-		std::cout << "\nDeseja jogar novamente? (Digite 0 para Não e 1 para Sim) ";
+		std::cout << "\nDeseja jogar novamente? (Digite 0 para NÃ£o e 1 para Sim) ";
 		std::cin >> continuarJogo;
 
 		if ((continuarJogo == 0) || (continuarJogo == 1))
@@ -135,8 +135,8 @@ int main()
 			do
 			{
 				system("CLS");
-				std::cout << "\nOpção inválida.";
-				std::cout << "\nDeseja jogar novamente? (Digite 0 para Não e 1 para Sim) ";
+				std::cout << "\nOpÃ§Ã£o invÃ¡lida.";
+				std::cout << "\nDeseja jogar novamente? (Digite 0 para NÃ£o e 1 para Sim) ";
 				std::cin >> continuarJogo;
 
 			} while ((continuarJogo != 1) && (continuarJogo != 0));
@@ -158,7 +158,7 @@ int main()
 
 void ganhou()
 {
-	std::cout << "\nVocê ganhou!" << std::endl;
+	std::cout << "\nVocÃª ganhou!" << std::endl;
 }
 
 void perdeu()
@@ -168,5 +168,5 @@ void perdeu()
 
 void empate()
 {
-	std::cout << "\nEmpate!" << std::endl;;
+	std::cout << "\nEmpate!" << std::endl;
 }
