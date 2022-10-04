@@ -1,3 +1,3 @@
 # Jokenpô (Pedra, Papel, Tesoura)
 
-versão: 0.1
+versão: 1.0
