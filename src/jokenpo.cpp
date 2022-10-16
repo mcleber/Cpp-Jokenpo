@@ -1,13 +1,14 @@
 /*-----------------------------------------
-* JokenpÙ
+* Jokenp√¥
 * Cleber Moretti
 * https://github.com/mcleber
 * v.0.1 : 03/04/2022
 -----------------------------------------
 * v.0.2 : 16/10/2022
-* CorreÁ„o no srand() e rand().
-* SubstituiÁ„o da seleÁ„o de jogadas para
-* switch.
+Corre√ß√£o no srand() e rand().
+Substitui√ß√£o da sele√ß√£o de jogadas para
+switch. 
+Altera√ß√£o nas op√ß√µes de jogo.
 -----------------------------------------*/
 
 #include <iostream>
@@ -27,7 +28,7 @@ int main()
 	while (verificacao)
 	{
 		system("CLS");
-		std::cout << "--- OP«’ES ---" << "\n[ 0 ] PEDRA\n" << "[ 1 ] PAPEL\n" << "[ 2 ] TESOURA\n";
+		std::cout << "--- OP√á√ïES ---" << "\n[ 0 ] PEDRA\n" << "[ 1 ] PAPEL\n" << "[ 2 ] TESOURA\n";
 		std::cout << "\nEscolha sua jogada: ";
 		std::cin >> jogador;
 
@@ -35,14 +36,14 @@ int main()
 		Sleep(530);
 		std::cout << "KEN";
 		Sleep(530);
-		std::cout << "P‘\n";
+		std::cout << "P√î\n";
 		Sleep(530);
 
 		/* RESULTADOS */
 		jogadas();
 
 		/* CONITNUAR JOGO? */
-		std::cout << "\nDeseja jogar novamente? (Digite 0 para N„o e 1 para Sim) ";
+		std::cout << "\nDeseja jogar novamente? (Digite 0 para N√£o e 1 para Sim) ";
 		std::cin >> continuarJogo;
 
 		if ((continuarJogo == 0) || (continuarJogo == 1))
@@ -54,8 +55,8 @@ int main()
 			do
 			{
 				system("CLS");
-				std::cout << "\nOpÁ„o inv·lida.";
-				std::cout << "\nDeseja jogar novamente? (Digite 0 para N„o e 1 para Sim) ";
+				std::cout << "\nOp√ß√£o inv√°lida.";
+				std::cout << "\nDeseja jogar novamente? (Digite 0 para N√£o e 1 para Sim) ";
 				std::cin >> continuarJogo;
 
 			} while ((continuarJogo != 1) && (continuarJogo != 0));
@@ -83,13 +84,13 @@ void jogadas()
 
 	switch (jogador) {
 	case 0: 
-		std::cout << "\nVocÍ escolheu PEDRA." << std::endl;
+		std::cout << "\nVoc√™ escolheu PEDRA." << std::endl;
 		break;
 	case 1: 
-		std::cout << "\nVocÍ escolheu PAPEL." << std::endl;
+		std::cout << "\nVoc√™ escolheu PAPEL." << std::endl;
 		break;
 	case 2: 
-		std::cout << "\nVocÍ escolheu TESOURA." << std::endl;
+		std::cout << "\nVoc√™ escolheu TESOURA." << std::endl;
 		break;
 	}
 
@@ -114,12 +115,12 @@ void jogadas()
 	}
 	else if (jogador == 0 && computador == 2)
 	{
-		std::cout << "\nVocÍ ganhou!" << std::endl;
+		std::cout << "\nVoc√™ ganhou!" << std::endl;
 		totalJogador++;
 	}
 	else if (jogador == 1 && computador == 0)
 	{
-		std::cout << "\nVocÍ ganhou!" << std::endl;
+		std::cout << "\nVoc√™ ganhou!" << std::endl;
 		totalJogador++;
 	}
 	else if (jogador == 1 && computador == 2)
@@ -134,7 +135,7 @@ void jogadas()
 	}
 	else if (jogador == 2 && computador == 1)
 	{
-		std::cout << "\nVocÍ ganhou!" << std::endl;
+		std::cout << "\nVoc√™ ganhou!" << std::endl;
 		totalJogador++;
 	}
 	else if (jogador == computador)
