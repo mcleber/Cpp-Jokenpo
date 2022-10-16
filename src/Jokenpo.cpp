@@ -2,7 +2,7 @@
 Jokenpô 
 Cleber Moretti
 https://github.com/mcleber
-v.1.0
+v.0.1
 03/04/2022
 ****************************/
 
